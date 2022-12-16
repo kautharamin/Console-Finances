@@ -10,6 +10,7 @@ This project was built to analyse the financial records of a company. Financial 
 * The greatest increase in profits (date and amount) over the entire period.
 * The greatest decrease in profits (date and amount) over the entire period.
 
+The deployed application is linked [here](https://kautharamin.github.io/Console-Finances/).
 
 ## Installation
 N/A

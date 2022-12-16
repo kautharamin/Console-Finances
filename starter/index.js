@@ -1,19 +1,22 @@
 // Define a function that performs the financial analysis
 
 function financialAnalysis(finances) {
-    let totalMonths = 0;
-    let netTotal = 0;
     let totalChange = 0;
     let maxIncrease = 0;
     let maxIncreaseMonth = '';
     let maxDecrease = 0;
     let maxDecreaseMonth = '';
 
-    // Use a loop to calculate all analysis
+    // Calculate the total number of months
+    const totalMonths = finances.length;
+
+    // Calculate the net total using the reduce method
+    const netTotal = finances.reduce((total, finance) => total + finance[1], 0);
+
+
+    // Use a loop to calculate other analysis
     for (let i = 0; i < finances.length; i++) {
-        totalMonths++; // 
-        netTotal += finances [i][1]; // +=  ---> netTotal = netTotal + finances[i][1]
-        
+       
         // Calculate the change from the previous month, so start from 1
         if (i > 0) {
             let change = finances[i][1] - finances[i-1][1];
